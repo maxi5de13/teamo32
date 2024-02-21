@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Amor</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: none; /* Carta inicialmente oculta */
+      }
+
+      h1 {
+        color: #e91e63;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      .heart {
+        color: #e91e63;
+        font-size: 48px;
+        display: block;
+        margin-top: 20px;
+      }
+
+      .signature {
+        font-style: italic;
+        margin-top: 20px;
+      }
+
+      .handwriting {
+        font-family: "Lucida Handwriting", cursive;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Estilizando o botão de coração */
+      #reveleCarta {
+        background: none;
+        border: none;
+        font-size: 48px;
+        color: #e91e63;
+        cursor: pointer;
+      }
+
+      #reveleCarta:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="carta">
+      <h1>Para Minha Neneca</h1>
+      <p class="handwriting">
+        Amor, eu quero aproveitar este momento para expressar o quanto você é
+        especial para mim. Você ilumina meus dias com seu sorriso, aquece meu
+        coração com seu amor e faz cada momento ao seu lado valer a pena. Eu te
+        amo mais do que palavras podem expressar.
+      </p>
+      <p class="handwriting">
+        Você é minha inspiração, minha razão de sorrir, minha força nos momentos
+        difíceis e a pessoa com quem quero compartilhar todos os meus sonhos e
+        conquistas. Ao seu lado, eu me sinto completo, e por isso sou
+        eternamente grato por ter você na minha vida.
+      </p>
+      <p class="handwriting">
+        Meu amor por você só cresce a cada dia, e prometo estar ao seu lado em
+        todos os momentos, apoiando você, cuidando de você e amando você com
+        todo o meu ser. Você é a melhor coisa que já me aconteceu, e eu nunca
+        vou deixar de te amar.
+      </p>
+      <p class="signature handwriting">
+        Com todo o meu amor,<br />Seu Neneco apaixonado
+      </p>
+      <span class="heart">&#10084;</span>
+      <img src="./amor.png" alt="Coração" />
+    </div>
+    <!-- Botão em formato de coração para revelar a carta -->
+    <button id="reveleCarta">&#10084;</button>
+
+    <script>
+      // Função para revelar a carta quando o botão é clicado
+      document
+        .getElementById("reveleCarta")
+        .addEventListener("click", function () {
+          // Exibe o container da carta
+          document.getElementById("carta").style.display = "block";
+          // Esconde o botão
+          this.style.display = "none";
+        });
+    </script>
+  </body>
+</html>
